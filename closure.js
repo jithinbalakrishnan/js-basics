@@ -1,24 +1,20 @@
-// var passed = 3
+// function binds together with its lexical scope it is called closure 
 
-// var addTo = function () {
-//    var inner = 2;
-//    return passed + inner;
-// };
+// function x () {
+//     var a = 100; 
+//     function y () {
+//         console.log(a);
+//     };
+//     y();
+// }
+// x()
 
-// console.dir(addTo);
-
-
-
-var addTo = function (num) {
-
-    var add = function (inner) {
-        return num + inner
-    }
-    return add;
+function x () {
+    var a = 100; 
+    function y () {
+        console.log(a);
+    };
+    return y;
 }
-
-// console.log(addTo(5))
-
-var addTwo = addTo(5);
-
-console.log(addTwo(1));
+var z = x();
+z();

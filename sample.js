@@ -1,25 +1,23 @@
-let name = {
-    firstName : "Jithin",
-    secondName: "Balu",
-    getFullName: function () {
-        return this.firstName + " " + this.secondName;
-    }
-};
+// let obj = {
+//     firstName: "Jithin",
 
-// console.log(name.getFullName())
+    // getFullName: function() {
+    //     return this.firstName
+    // }
+// }
 
+// console.log(obj.getFullName())
 
-let getFullName = function (hometown) {
-    return this.firstName + " " + this.secondName + " from " + hometown;
+let data = {
+    firstName: "Jithin"
 }
 
-let name2 = {
-    firstName: "Jibin",
-    secondName: "Balu"
-};
+const getFullName = function(secondName) {
+    return this.firstName + secondName
+}
 
-// console.log(name.getFullName.call(name2))
+// console.log(getFullName.apply(data, ["Bal"]))
 
-console.log(getFullName.call(name, "Kannur"))
+const getName = getFullName.bind(data, ["Bal"])
 
-console.log(getFullName.apply(name2, ["Kannur"]))
+console.log(getName())

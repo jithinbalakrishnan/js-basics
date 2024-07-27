@@ -78,10 +78,10 @@ function getVideoInfo (video) {
     })
 }
 
-// loginUser("jithin@kommunciate.io", 123456)
-//     .then(user => {console.log(user); return getVideos(user)} )
-//     .then(videos => getVideoInfo(videos[0]))
-//     .then( result => {console.log("done")} )
+loginUser("jithin@kommunciate.io", 123456)
+    .then(user => {console.log(user); return getVideos(user)} )
+    .then(videos => getVideoInfo(videos[0]))
+    .then( result => {console.log("done")} )
 
 
 // async function displayUser () {

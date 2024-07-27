@@ -17,3 +17,5 @@ const debounce = (fn, d) => {
 };
 
 const handleDebounce = debounce(getData, 300)
+
+handleDebounce()
