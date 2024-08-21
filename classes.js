@@ -30,7 +30,7 @@ person.getGender();
 // PRACTICE
 
 
-
+// Classes are a template for creating objects.
 // Class Declaration
 class User {
 

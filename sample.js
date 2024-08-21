@@ -1,23 +1,6 @@
-// let obj = {
-//     firstName: "Jithin",
+let newSet = new Set()
 
-    // getFullName: function() {
-    //     return this.firstName
-    // }
-// }
+newSet.add(1)
+newSet.add(1)
 
-// console.log(obj.getFullName())
-
-let data = {
-    firstName: "Jithin"
-}
-
-const getFullName = function(secondName) {
-    return this.firstName + secondName
-}
-
-// console.log(getFullName.apply(data, ["Bal"]))
-
-const getName = getFullName.bind(data, ["Bal"])
-
-console.log(getName())
+console.log('newSet', newSet)

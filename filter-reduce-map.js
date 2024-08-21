@@ -42,6 +42,17 @@ const max = arr.reduce((acc,current) => {
 
 console.log('max', max)
 
+// Remove duplicate items
+const items = [1, 2, 3, 1, 2, 3, 7, 8, 7];
+
+let result = items.reduce((ac, cu) => {
+    if(!ac.includes(cu)) {
+        ac.push(cu)
+    }
+    return ac
+},[])
+console.log('result', result)
+
 
 // arr.reduce((a,b) => a = a+ b) find total
 

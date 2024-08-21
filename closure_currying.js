@@ -1,3 +1,4 @@
+// it involves breaking down a function that takes multiple arguments into a series of functions that take one argument each.
 // currying is based on bind()
 
 const multiply = function(x,y) {
