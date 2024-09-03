@@ -6,3 +6,5 @@ setTimeout(()=> {
 },0)
 
 console.log(Promise.resolve("pr"))
+
+console.log('End')
